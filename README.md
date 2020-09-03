@@ -1,0 +1,1 @@
+# notify-slack-errors-action

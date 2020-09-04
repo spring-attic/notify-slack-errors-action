@@ -9,7 +9,7 @@ In order for this action to work, you must first import download the errors fold
 
 Make sure to use this action at the end of your build process, and to require all other jobs to finish executing first by using the `needs:` key. Additionally, make sure to include `if: always()` to ensure that you always get notifications – if you don't include this, you will **not** receive notifications for earlier failed jobs. Note that all of this is included in the example below.
 
-If you'd like an example that demonstrates the usage of this action and the [track-build-errors-action](https://github.com/spring-projects/track-build-errors-action), see this [sample project]().
+If you'd like an example that demonstrates the usage of this action and the [track-build-errors-action](https://github.com/spring-projects/track-build-errors-action), see this [sample project](https://github.com/elliedori/sample-action-usage-project).
 
 ## Inputs
 

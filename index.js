@@ -38,7 +38,7 @@ function errorNotification (errors) {
         "type":"header",
         "text":{
           "type":"plain_text",
-          "text":`CI build failed for commit ${commitSha.substring(0,9)} on ${branchName.replace("refs/heads/", "")}`
+          "text":`Build failed for commit ${commitSha.substring(0,9)} on ${branchName.replace("refs/heads/", "")}`
         }
     },
     {

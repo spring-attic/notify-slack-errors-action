@@ -34,6 +34,7 @@ If you'd like an example that demonstrates the usage of this action and the [tra
 
 ## Example usage
 
+```
 jobs:
   initiate_error_tracking: ...
   job_1: ...
@@ -59,3 +60,4 @@ jobs:
           commit-owner: ${{ github.actor }}
           repo-name: ${{ github.repository }}
           run-id: ${{ github.run_id }}
+```

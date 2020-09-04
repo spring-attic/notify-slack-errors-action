@@ -2,6 +2,10 @@
 
 This action posts a summary build error message to Slack and enables you to report on the status of all jobs in the build. If no jobs failed, the action will not post a message to Slack. **Please note that this action is meant to be used in tandem with [track-build-errors-action](https://github.com/spring-projects/track-build-errors-action).**
 
+On build error, this action will send a Slack notification detailing which jobs in the build failed, who the commit author was, and will link back to the original build:
+
+![Screen Shot 2020-09-03 at 5 55 56 PM](https://user-images.githubusercontent.com/15992415/92188562-c9758b80-ee11-11ea-8b6a-15bb83af0d9e.png)
+
 ## Strategy
 The track-build-errors-action exports a job-specific errors file at the end of each failed job. This action combines all of the failed job messages and send a single notification to Slack, which includes a link to the original build.
 

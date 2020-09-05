@@ -7,11 +7,11 @@ On build error, this action will send a Slack notification detailing which jobs 
 ![Screen Shot 2020-09-03 at 5 55 56 PM](https://user-images.githubusercontent.com/15992415/92188562-c9758b80-ee11-11ea-8b6a-15bb83af0d9e.png)
 
 ## Strategy
-The track-build-errors-action exports a job-specific errors file at the end of each failed job. This action combines all of the failed job messages and send a single notification to Slack, which includes a link to the original build.
+The [track-build-errors-action](https://github.com/spring-projects/track-build-errors-action) exports a job-specific errors file at the end of each failed job. This action combines all of the failed job messages and sends a single notification to Slack, which includes a link to the original build.
 
-In order for this action to work, you must first import download the errors folder in order to make the previously created error files available within the scope of the notify-slack job. This is shown in the example usage below.
+In order for this action to work, you must first download the errors folder in order to make the previously created error files available within the scope of the notify-slack job. This is shown in the example below.
 
-Make sure to use this action at the end of your build process, and to require all other jobs to finish executing first by using the `needs:` key. Additionally, make sure to include `if: always()` to ensure that you always get notifications – if you don't include this, you will **not** receive notifications for earlier failed jobs. Note that all of this is included in the example below.
+Make sure to use this action at the end of your build process, and to require all other jobs to finish executing first by using the `needs:` key. Additionally, make sure to include `if: always()` to ensure that you always get notifications – if you don't include this, you will **not** receive notifications for earlier failed jobs. This is also shown in the example below.
 
 If you'd like an example that demonstrates the usage of this action and the [track-build-errors-action](https://github.com/spring-projects/track-build-errors-action), see this [sample project](https://github.com/elliedori/sample-action-usage-project).
 

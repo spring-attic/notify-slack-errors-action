@@ -1,3 +1,6 @@
+# This repository is no longer actively maintained by VMware, Inc.
+
+
 # notify-slack-errors-action
 
 This action posts a summary build error message to Slack and enables you to report on the status of all jobs in the build. If no jobs failed, the action will not post a message to Slack. **Please note that this action is meant to be used in tandem with [track-build-errors-action](https://github.com/spring-projects/track-build-errors-action).**
